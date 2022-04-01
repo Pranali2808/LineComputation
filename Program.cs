@@ -10,8 +10,11 @@ namespace LineComparisionComputation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparison Computation program on Master Branch");
-            Console.ReadLine(); 
+            LineComparision lineComparison = new LineComparision();
+            lineComparison.PointValues();
+            double lineLength = lineComparison.GetLength();
+            Console.WriteLine("Length of first Line according to points is= " + lineLength);
+            Console.ReadLine();
         }
     }
 }
